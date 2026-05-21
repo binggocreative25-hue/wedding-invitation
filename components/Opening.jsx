@@ -84,7 +84,7 @@ export default function Opening({ guestName, onOpen }) {
           marginBottom: '24px',
           animation: 'fadeUp 0.8s ease 0.65s both',
         }}>
-          pernikahan kami
+        
         </p>
 
         <h1 style={{
