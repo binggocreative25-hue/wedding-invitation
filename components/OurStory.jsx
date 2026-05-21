@@ -52,21 +52,23 @@ export default function OurStory() {
             <ScrollReveal key={i} delay={i + 1}>
               <div style={{ textAlign: 'center' }}>
                 <div style={{
-                  width: '120px',
-                  height: '120px',
-                  borderRadius: '50%',
-                  border: '2px solid #D4B47A',
-                  overflow: 'hidden',
-                  margin: '0 auto 16px',
-                  background: '#F0E8DF',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '3rem',
-                }}>
-                  {/* Placeholder — ganti dengan <Image> setelah foto tersedia */}
-                  {i === 0 ? '👰' : '🤵'}
-                </div>
+  width: '120px',
+  height: '120px',
+  borderRadius: '50%',
+  border: '2px solid #D4B47A',
+  overflow: 'hidden',
+  margin: '0 auto 16px',
+}}>
+  <img
+    src={person.photo}
+    alt={person.nickname}
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    }}
+  />
+</div>
                 <p style={{
                   fontFamily: 'var(--font-cormorant)',
                   fontSize: 'clamp(1.6rem, 5vw, 2rem)',

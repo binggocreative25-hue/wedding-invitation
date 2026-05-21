@@ -172,7 +172,7 @@ export default function EventDetails() {
               fontStyle: 'italic',
               color: '#5C3D2E',
             }}>
-              Pastel &amp; Earth Tones — Hindari warna putih dan hitam pekat
+              Bebas
             </p>
           </div>
         </ScrollReveal>

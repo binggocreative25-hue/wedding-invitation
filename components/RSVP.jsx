@@ -105,7 +105,7 @@ export default function RSVP() {
               color: '#5C3D2E',
               opacity: 0.65,
             }}>
-              Mohon konfirmasikan kehadiran Anda sebelum 1 September 2025
+              Mohon konfirmasikan kehadiran Anda sebelum 1 Juni 2026
             </p>
             <Divider />
           </div>
