@@ -10,43 +10,43 @@ export const config = {
 
   // ─── IDENTITAS PASANGAN ────────────────────────────────────
   bride: {
-    fullName:  'Siti Rahayu Putri',
-    nickname:  'Ayu',
-    instagram: '@sitirahayu',
-    parents:   'Putri dari Bapak Ahmad Fauzi & Ibu Sari Dewi',
+    fullName:  'Yunita Candra Kumara Devi',
+    nickname:  'Devi',
+    instagram: '',
+    parents:   'Putri dari Bapak Eddi Satiyo Harjowiyono (alm) & Ibu Tutik Sumartini (almh)',
     photo:     '/images/bride.jpg',   // taruh foto di folder public/images/
   },
 
   groom: {
-    fullName:  'Budi Santoso Wijaya',
-    nickname:  'Budi',
-    instagram: '@budisantoso',
-    parents:   'Putra dari Bapak Hendra & Ibu Wati Rahmawati',
+    fullName:  'Roni Ariyanto',
+    nickname:  'Roni',
+    instagram: '',
+    parents:   'Putra dari Bapak Suparman (alm) & Ibu Siti Aminah (almh)',
     photo:     '/images/groom.jpg',
   },
 
   // ─── TANGGAL COUNTDOWN ─────────────────────────────────────
-  // Format: 'YYYY-MM-DDTHH:mm:ss' (waktu lokal)
-  weddingDateTime: '2025-09-14T08:00:00',
+  // Format: '2025-09-14T08:00:00' (waktu lokal)
+  weddingDateTime: '2026-06-10 10:00:00',
 
   // ─── DETAIL ACARA ──────────────────────────────────────────
   events: [
     {
       name:    'Akad Nikah',
-      date:    'Minggu, 14 September 2025',
-      time:    '08.00 – 10.00 WIB',
-      venue:   'Masjid Al-Ikhlas',
-      address: 'Jl. Mawar No. 10, Kebayoran Baru, Jakarta Selatan',
-      mapsUrl: 'https://maps.google.com/?q=-6.2407,106.7996',
+      date:    'Rabu, 10 Juni 2026',
+      time:    '08.00 WIB',
+      venue:   'Taman Sari Hotel and Convention Center',
+      address: 'Jl. Raya Solo Tawangmangu No.98 Cangakan, Karanganyar',
+      mapsUrl: 'https://maps.app.goo.gl/8fyfZJMmgwyWzNQ46',
       icon:    '🕌',
     },
     {
       name:    'Resepsi Pernikahan',
-      date:    'Minggu, 14 September 2025',
-      time:    '11.00 – 14.00 WIB',
-      venue:   'Gedung Serbaguna Indah',
-      address: 'Jl. Kenanga No. 5, Kemang, Jakarta Selatan',
-      mapsUrl: 'https://maps.google.com/?q=-6.2607,106.8116',
+      date:    'Minggu, 10 Juni 2026',
+      time:    '10.00 WIB - Selesai',
+      venue:   'Taman Sari Hotel and Convention Center',
+      address: 'Jl. Raya Solo Tawangmangu No.98 Cangakan, Karanganyar',
+      mapsUrl: 'https://maps.app.goo.gl/8fyfZJMmgwyWzNQ46',
       icon:    '🌸',
     },
   ],
@@ -89,12 +89,12 @@ export const config = {
   // Ganti dengan path foto prewedding klien di folder public/images/gallery/
   // atau gunakan URL eksternal
   gallery: [
-    'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80',
-    'https://images.unsplash.com/photo-1529636798458-92182e662485?w=800&q=80',
-    'https://images.unsplash.com/photo-1511285560929-80b456503681?w=800&q=80',
-    'https://images.unsplash.com/photo-1518049362265-d5b2a6467637?w=800&q=80',
-    'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800&q=80',
-    'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&q=80',
+    'images/gallery/image1.jpg',
+    'images/gallery/image2.jpg',
+    'images/gallery/image3.jpg',
+    'images/gallery/image4.jpg',
+    'images/gallery/image5.jpg'
+    
   ],
 
   // ─── MUSIK ─────────────────────────────────────────────────
@@ -111,8 +111,8 @@ export const config = {
     enabled: true,
     message: 'Tanpa mengurangi rasa hormat, bagi keluarga & sahabat yang ingin memberikan tanda kasih dapat melalui:',
     accounts: [
-      { bank: 'BCA',     number: '1234 5678 90',  name: 'Budi Santoso Wijaya' },
-      { bank: 'Mandiri', number: '9876 5432 10',  name: 'Siti Rahayu Putri'   },
+      { bank: 'BCA',     number: '1234 5678 90',  name: 'Yunita Candra Kumara Devi' },
+      { bank: 'Mandiri', number: '9876 5432 10',  name: 'Yunita Candra Kumara Devi'   },
     ],
     gopay: '',      // nomor GoPay (kosongkan jika tidak ada)
     ovo:   '',      // nomor OVO
@@ -129,6 +129,6 @@ export const config = {
   // Ganti untuk menyesuaikan tema pernikahan klien
   theme: {
     // Pilihan: 'gold' | 'sage' | 'dusty-rose' | 'navy'
-    preset: 'gold',
+    preset: 'Sage',
   },
 }
