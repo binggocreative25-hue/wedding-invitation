@@ -26,6 +26,7 @@ export const config = {
   },
 // ─── HERO BACKGROUND ───────────────────────────────────────
 heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
+
   // ─── TANGGAL COUNTDOWN ─────────────────────────────────────
   // Format: '2025-09-14T08:00:00' (waktu lokal)
   weddingDateTime: '2026-06-10 10:00:00',

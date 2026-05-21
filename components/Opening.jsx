@@ -72,7 +72,7 @@ export default function Opening({ guestName, onOpen }) {
           marginBottom: '6px',
           animation: 'fadeUp 0.8s ease 0.6s both',
         }}>
-          Turut mengundang kehadiran Anda dalam
+          Turut mengundang kehadiran Bapak/Ibu/Saudara/i dalam pernikahan kami
         </p>
 
         <p style={{
