@@ -25,7 +25,7 @@ export const config = {
     photo:     '/images/groom.jpg',
   },
 // ─── HERO BACKGROUND ───────────────────────────────────────
-heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
+heroImage: '/images/gallery/1.jpg',  // foto khusus hero, bebas pilih
 
   // ─── TANGGAL COUNTDOWN ─────────────────────────────────────
   // Format: '2025-09-14T08:00:00' (waktu lokal)
