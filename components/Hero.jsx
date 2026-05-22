@@ -39,6 +39,7 @@ export default function Hero() {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     zIndex: 0,
+pointerEvents: 'none',
   }}
 />
 
@@ -55,6 +56,7 @@ export default function Hero() {
       )
     `,
     zIndex: 0,
+    pointerEvents: 'none',
   }}
 />
       {/* Content */}
