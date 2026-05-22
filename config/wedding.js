@@ -127,5 +127,6 @@ heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
   theme: {
     // Pilihan: 'gold' | 'sage' | 'dusty-rose' | 'navy'
     preset: 'gold',
-  },
+  
+},
 }
