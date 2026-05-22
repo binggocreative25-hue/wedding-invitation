@@ -33,7 +33,7 @@ export default function Hero() {
     rgba(44,26,14,0.3) 50%,
     rgba(44,26,14,0.7) 100%
   ),
-  url(${config.heroImage || config.gallery[0]})
+  url("${config.heroImage || config.gallery[0]}")
 `,
 backgroundSize: 'cover',
 backgroundPosition: 'center',
