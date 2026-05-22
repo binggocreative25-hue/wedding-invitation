@@ -129,4 +129,6 @@ heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
     preset: 'gold',
   
 },
+requireGuestName: true,
+
 }
