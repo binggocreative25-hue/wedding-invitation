@@ -14,23 +14,30 @@ export async function POST(request) {
     }
 
     // Jika Supabase belum dikonfigurasi, return sukses saja (mode dev)
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-      console.log('RSVP received (Supabase not configured):', { name, attendance, guests, message })
-      return NextResponse.json({ success: true })
-    }
-if (!supabase) {
-  return NextResponse.json(
-    { error: 'Supabase belum terhubung.' },
-    { status: 500 }
-  )
+   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+  console.log('RSVP received (Supabase not configured):', { name, attendance, guests, message })
+  return NextResponse.json({ success: true })
 }
-    const { error } = await supabase.from('rsvp').insert([
-      { name, attendance, guests: parseInt(guests) || 1, message }
-    ])
 
-    if (error) throw error
+const payload = {
+  name,
+  attendance,
+  guests: attendance === 'hadir'
+    ? parseInt(guests || '1')
+    : 0,
+  message: message || '',
+}
 
-    return NextResponse.json({ success: true })
+const { error } = await supabase
+  .from('rsvp')
+  .insert([payload])
+
+if (error) {
+  console.error('SUPABASE INSERT ERROR:', error)
+  throw error
+}
+
+return NextResponse.json({ success: true })
 
   } catch (err) {
     console.error('RSVP error:', err)
