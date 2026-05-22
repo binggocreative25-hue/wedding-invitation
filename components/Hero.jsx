@@ -19,6 +19,7 @@ export default function Hero() {
 
   return (
     <section
+    
       style={{
         minHeight: '100svh',
         display: 'flex',
@@ -26,20 +27,36 @@ export default function Hero() {
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
-        backgroundImage: `
-  linear-gradient(
-    to bottom,
-    rgba(44,26,14,0.55) 0%,
-    rgba(44,26,14,0.3) 50%,
-    rgba(44,26,14,0.7) 100%
-  ),
-  url("${config.heroImage || config.gallery[0]}")
-`,
-backgroundSize: 'cover',
-backgroundPosition: 'center',
-backgroundRepeat: 'no-repeat',
+      
       }}
     >
+      <div
+  style={{
+    position: 'absolute',
+    inset: 0,
+    backgroundImage: `url("${config.heroImage}")`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    zIndex: 0,
+  }}
+/>
+
+<div
+  style={{
+    position: 'absolute',
+    inset: 0,
+    background: `
+      linear-gradient(
+        to bottom,
+        rgba(44,26,14,0.55) 0%,
+        rgba(44,26,14,0.3) 50%,
+        rgba(44,26,14,0.7) 100%
+      )
+    `,
+    zIndex: 0,
+  }}
+/>
       {/* Content */}
       <div style={{
         textAlign: 'center',
