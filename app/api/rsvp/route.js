@@ -18,7 +18,12 @@ export async function POST(request) {
       console.log('RSVP received (Supabase not configured):', { name, attendance, guests, message })
       return NextResponse.json({ success: true })
     }
-
+if (!supabase) {
+  return NextResponse.json(
+    { error: 'Supabase belum terhubung.' },
+    { status: 500 }
+  )
+}
     const { error } = await supabase.from('rsvp').insert([
       { name, attendance, guests: parseInt(guests) || 1, message }
     ])
@@ -37,7 +42,12 @@ export async function GET() {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
     return NextResponse.json({ data: [] })
   }
-
+if (!supabase) {
+  return NextResponse.json(
+    { error: 'Supabase belum terhubung.' },
+    { status: 500 }
+  )
+}
   const { data, error } = await supabase
     .from('rsvp')
     .select('*')
