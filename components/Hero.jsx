@@ -26,10 +26,18 @@ export default function Hero() {
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
-        background: `
-          linear-gradient(to bottom, rgba(44,26,14,0.55) 0%, rgba(44,26,14,0.3) 50%, rgba(44,26,14,0.7) 100%),
-          url(${config.heroImage || config.gallery[0]}) center/cover no-repeat
-        `,
+        backgroundImage: `
+  linear-gradient(
+    to bottom,
+    rgba(44,26,14,0.55) 0%,
+    rgba(44,26,14,0.3) 50%,
+    rgba(44,26,14,0.7) 100%
+  ),
+  url(${config.heroImage || config.gallery[0]})
+`,
+backgroundSize: 'cover',
+backgroundPosition: 'center',
+backgroundRepeat: 'no-repeat',
       }}
     >
       {/* Content */}
