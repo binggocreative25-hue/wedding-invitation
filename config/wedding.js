@@ -91,7 +91,7 @@ heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
     'images/gallery/5.jpg',
     'images/gallery/6.jpg',
     'images/gallery/7.jpg',
-    
+    'images/gallery/hero.jpg',
   ],
 
   // ─── MUSIK ─────────────────────────────────────────────────
