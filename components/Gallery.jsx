@@ -37,7 +37,7 @@ export default function Gallery() {
 
       <ScrollReveal>
         <div className="gallery-grid" style={{ padding: '0 8px', maxWidth: '720px', margin: '0 auto' }}>
-          {config.gallery.map((src, i) => (
+          {config.gallery.slice(1).map((src, i) => (
             <div
               key={i}
               className="gallery-item"
