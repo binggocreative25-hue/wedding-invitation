@@ -67,7 +67,7 @@ heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
       year:        '2026',
       emoji:       '💌',
       title:       'Lamaran',
-      description: 'Kehendaknya menuntun kami pada sebuah pertemuan, yang tak pernah disangka hingga akhirnya pada 4 Januari 2026 membawa kami pada sebuah ikatan yang di Ridhoi-Nya',
+      description: 'Kehendak-Nya menuntun kami pada sebuah pertemuan yang tak pernah disangka, hingga akhirnya pada 4 Januari 2026 membawa kami pada sebuah ikatan yang di Ridhoi-Nya',
     },
 
 
@@ -75,7 +75,7 @@ heroImage: '/images/hero.jpg',  // foto khusus hero, bebas pilih
       year:        '2026',
       emoji:       '✈️',
       title:       'Menuju Pelaminan',
-      description: 'Bukan karna bertemu lalu berjodoh,tapi karna berjodohlah kami bisa bertemu. Kami memutuskan untuk mengikrarkan janji suci pernikahan pada 10 Juni 2026. Sebagaimana yang pernah dikatakan oleh Ali Bin Abi Thalib " Apa yang menjadi takdirmu akan menemukan jalannya untuk menemukanmu"',
+      description: 'Bukan karna bertemu lalu berjodoh, tapi karna berjodohlah kami bisa bertemu. Kami memutuskan untuk mengikrarkan janji suci pernikahan pada 10 Juni 2026. Sebagaimana yang pernah dikatakan oleh Ali Bin Abi Thalib " Apa yang menjadi takdirmu akan menemukan jalannya untuk menemukanmu"',
     },
    
   ],
