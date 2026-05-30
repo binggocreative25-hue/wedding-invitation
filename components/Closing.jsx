@@ -1,4 +1,5 @@
-import { config } from '@/config/wedding'
+'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import ScrollReveal from './ScrollReveal'
 
 function Ornament() {
@@ -12,6 +13,7 @@ function Ornament() {
 }
 
 export default function Closing() {
+  const config = useWeddingConfig()
   const { bride, groom, closing } = config
 
   return (

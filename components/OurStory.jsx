@@ -1,4 +1,5 @@
-import { config } from '@/config/wedding'
+'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import ScrollReveal from './ScrollReveal'
 
 function Divider() {
@@ -12,6 +13,7 @@ function Divider() {
 }
 
 export default function OurStory() {
+  const config = useWeddingConfig()
   return (
     <section style={{ background: '#FAF7F2' }}>
       {/* Couple Intro */}

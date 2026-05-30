@@ -18,12 +18,12 @@ const jost = Jost({
 })
 
 export const metadata = {
-  title: `The Wedding of ${config.bride.nickname} & ${config.groom.nickname}`,
-  description: `Undangan pernikahan ${config.bride.fullName} & ${config.groom.fullName}`,
+  title: 'Wedding Invitation — BinggoCreative',
+  description: 'Undangan pernikahan digital premium oleh BinggoCreative Studio.',
   openGraph: {
-    title:       `The Wedding of ${config.bride.nickname} & ${config.groom.nickname}`,
-    description: `Kami mengundang kehadiran Anda dalam pernikahan kami.`,
-    type:        'website',
+    title: 'Wedding Invitation — BinggoCreative',
+    description: 'Undangan pernikahan digital premium.',
+    type: 'website',
   },
 }
 

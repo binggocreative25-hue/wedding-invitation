@@ -1,10 +1,11 @@
 'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import { useState } from 'react'
 import Image from 'next/image'
-import { config } from '@/config/wedding'
 import ScrollReveal from './ScrollReveal'
 
 export default function Gallery() {
+  const config = useWeddingConfig()
   const [lightbox, setLightbox] = useState(null)
 
   return (
@@ -37,7 +38,9 @@ export default function Gallery() {
 
       <ScrollReveal>
         <div className="gallery-grid" style={{ padding: '0 8px', maxWidth: '720px', margin: '0 auto' }}>
-          {config.gallery.slice(1).map((src, i) => (
+          {config.gallery
+              .filter(imgSrc => imgSrc !== config.heroImage)
+              .map((src, i) => (
             <div
               key={i}
               className="gallery-item"

@@ -1,8 +1,9 @@
 'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import { useState, useRef, useEffect } from 'react'
-import { config } from '@/config/wedding'
 
 export default function AudioPlayer({ autoPlay = false }) {
+  const config = useWeddingConfig()
   const [playing, setPlaying] = useState(false)
   const audioRef = useRef(null)
 

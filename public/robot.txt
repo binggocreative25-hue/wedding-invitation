@@ -1,0 +1,7 @@
+# Undangan pernikahan bersifat privat — jangan diindex search engine
+User-agent: *
+Disallow: /
+Disallow: /admin/
+
+# Izinkan akses ke OG image (dibutuhkan WhatsApp & platform lain)
+Allow: /api/og/

@@ -1,4 +1,5 @@
-import { config } from '@/config/wedding'
+'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 
 function Ornament() {
   return (
@@ -12,6 +13,7 @@ function Ornament() {
 
 export default function Hero() {
   // Format tanggal dari config
+  const config = useWeddingConfig()
   const eventDate = new Date(config.weddingDateTime)
   const formattedDate = eventDate.toLocaleDateString('id-ID', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'

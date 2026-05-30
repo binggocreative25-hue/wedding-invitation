@@ -1,11 +1,12 @@
 'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import { useState, useEffect } from 'react'
-import { config } from '@/config/wedding'
 import ScrollReveal from './ScrollReveal'
 
 function pad(n) { return String(n).padStart(2, '0') }
 
 export default function Countdown() {
+  const config = useWeddingConfig()
   const [timeLeft, setTimeLeft] = useState(null)
   const [isPast, setIsPast]   = useState(false)
 

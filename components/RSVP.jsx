@@ -1,4 +1,5 @@
 'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import { useState } from 'react'
 import ScrollReveal from './ScrollReveal'
 
@@ -13,6 +14,7 @@ function Divider() {
 }
 
 export default function RSVP() {
+  const config = useWeddingConfig()
   const [form, setForm] = useState({
     name: '', attendance: '', guests: '1', message: ''
   })

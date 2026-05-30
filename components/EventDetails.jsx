@@ -1,5 +1,7 @@
-import { config } from '@/config/wedding'
+'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import ScrollReveal from './ScrollReveal'
+
 
 function Divider() {
   return (
@@ -109,6 +111,7 @@ function EventCard({ event }) {
 }
 
 export default function EventDetails() {
+  const config = useWeddingConfig()
   return (
     <section style={{ background: '#F0E8DF', padding: '80px 24px' }}>
       <div style={{ maxWidth: '680px', margin: '0 auto' }}>

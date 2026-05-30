@@ -1,6 +1,6 @@
 'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import { useState } from 'react'
-import { config } from '@/config/wedding'
 
 // SVG ornament component
 function Ornament() {
@@ -14,6 +14,7 @@ function Ornament() {
 }
 
 export default function Opening({ guestName, onOpen }) {
+  const config = useWeddingConfig()
   const [isClosing, setIsClosing] = useState(false)
 
   const handleOpen = () => {

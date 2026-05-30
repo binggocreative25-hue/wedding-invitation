@@ -22,10 +22,9 @@ export async function POST(request) {
 const payload = {
   name,
   attendance,
-  guests: attendance === 'hadir'
-    ? parseInt(guests || '1')
-    : 0,
+  guests: attendance === 'hadir' ? parseInt(guests || '1') : 0,
   message: message || '',
+  client_id: body.client_id || null,
 }
 
 const { error } = await supabase

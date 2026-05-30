@@ -1,7 +1,8 @@
 'use client'
+import { useWeddingConfig } from '@/contexts/ClientConfig'
 import { useState } from 'react'
-import { config } from '@/config/wedding'
 import ScrollReveal from './ScrollReveal'
+
 
 function CopyButton({ text }) {
   const [copied, setCopied] = useState(false)
@@ -10,6 +11,8 @@ function CopyButton({ text }) {
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
+
+  
   return (
     <button
       onClick={handleCopy}
@@ -32,6 +35,7 @@ function CopyButton({ text }) {
 }
 
 export default function GiftInfo() {
+  const config = useWeddingConfig()
   if (!config.gifts?.enabled) return null
 
   return (
@@ -135,6 +139,24 @@ export default function GiftInfo() {
               </div>
             </ScrollReveal>
           )}
+
+          {config.gifts.ovo && (
+            <ScrollReveal>
+              <div className="gift-card">
+                <div style={{ textAlign: 'left' }}>
+                  <p style={{
+                    fontFamily: 'var(--font-jost)', fontSize: '0.65rem',
+                    letterSpacing: '0.2em', textTransform: 'uppercase',
+                    color: '#B8965A', marginBottom: '4px',
+                    }}>OVO</p>
+                  <p style={{ fontFamily: 'var(--font-cormorant)', fontSize: '1.3rem', color: '#2C1A0E' }}>
+                     {config.gifts.ovo}
+                 </p>
+               </div>
+             <CopyButton text={config.gifts.ovo} />
+             </div>
+          </ScrollReveal>
+  )}
         </div>
       </div>
     </section>
