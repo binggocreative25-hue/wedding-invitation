@@ -3,16 +3,17 @@ import { useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { ClientConfigProvider, useWeddingConfig } from '@/contexts/ClientConfig'
 
-import Opening      from '@/components/Opening'
-import Hero         from '@/components/Hero'
-import Countdown    from '@/components/Countdown'
-import OurStory     from '@/components/OurStory'
-import EventDetails from '@/components/EventDetails'
-import Gallery      from '@/components/Gallery'
-import RSVP         from '@/components/RSVP'
-import GiftInfo     from '@/components/GiftInfo'
-import Closing      from '@/components/Closing'
-import AudioPlayer  from '@/components/AudioPlayer'
+import Opening        from '@/components/Opening'
+import Hero           from '@/components/Hero'
+import Countdown      from '@/components/Countdown'
+import OurStory       from '@/components/OurStory'
+import EventDetails   from '@/components/EventDetails'
+import Gallery        from '@/components/Gallery'
+import RSVP           from '@/components/RSVP'
+import GiftInfo       from '@/components/GiftInfo'
+import Closing        from '@/components/Closing'
+import AudioPlayer    from '@/components/AudioPlayer'
+import FloatingPetals from '@/components/FloatingPetals'
 
 function PageContent() {
   const config = useWeddingConfig()
@@ -57,6 +58,7 @@ function PageContent() {
 export default function WeddingPage({ config }) {
   return (
     <ClientConfigProvider config={config}>
+      <FloatingPetals />
       <Suspense fallback={
         <div className="min-h-screen flex items-center justify-center bg-[#FAF7F2]">
           <p style={{ fontFamily: 'var(--font-cormorant)', color: '#B8965A', fontSize: '1.5rem', fontStyle: 'italic' }}>

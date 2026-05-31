@@ -13,14 +13,32 @@ function Ornament() {
   )
 }
 
-export default function Opening({ guestName, onOpen }) {
+  export default function Opening({ guestName, onOpen }) {
   const config = useWeddingConfig()
   const [isClosing, setIsClosing] = useState(false)
+  const [splitOpen, setSplitOpen] = useState(false)
 
   const handleOpen = () => {
     setIsClosing(true)
-    setTimeout(onOpen, 900)
+    setTimeout(() => setSplitOpen(true), 100)
+    setTimeout(onOpen, 1000)
   }
+
+  if (splitOpen) return null
+  if (isClosing) return (
+  <>
+    <div style={{
+      position: 'fixed', top: 0, left: 0, right: 0, height: '50vh',
+      background: '#FAF7F2', zIndex: 50,
+      animation: 'curtainUp 0.9s cubic-bezier(0.76, 0, 0.24, 1) forwards',
+    }} />
+    <div style={{
+      position: 'fixed', bottom: 0, left: 0, right: 0, height: '50vh',
+      background: '#FAF7F2', zIndex: 50,
+      animation: 'curtainDown 0.9s cubic-bezier(0.76, 0, 0.24, 1) forwards',
+    }} />
+  </>
+  )
 
   return (
     <div className={`opening-overlay ${isClosing ? 'closing' : ''}`}>
